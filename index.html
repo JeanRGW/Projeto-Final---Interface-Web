@@ -4,21 +4,30 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Amendoim Brasil</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nanum+Gothic:wght@400;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
             rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
     </head>
     <body class="dark-theme">
         <header class="container">
             <nav>
                 <ul>
-                    <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#features">Diferenciais</a></li>
+                    <li><a href="#reviews">Avaliações</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
                 <button id="theme-toggle">🌙</button>
             </nav>
@@ -26,10 +35,10 @@
 
         <main class="container">
             <section class="landing">
-                <h1 class="landing-title">Amendoim Brasil</h1>
+                <h1 class="landing-title accent-text">Amendoim Brasil</h1>
                 <div class="landing-peanut-container">
                     <img
-                        src="amendoimInteiro.png"
+                        src="images/amendoimInteiro.png"
                         alt="Amendoim Inteiro"
                         class="landing-peanut"
                     />
@@ -38,8 +47,8 @@
                 <p class="landing-text">O sabor do campo em sua mesa</p>
             </section>
 
-            <section class="products">
-                <h1>Nossos Produtos</h1>
+            <section class="products" id="products">
+                <h2 class="accent-text">Nossos Produtos</h2>
                 <div class="product-list">
                     <div class="product-card product1">
                         <h3>Amendoim Japonês</h3>
@@ -48,7 +57,13 @@
                             qualquer ocasião!
                         </p>
                     </div>
-                    <img src="" alt="Amendoim Japonês" />
+                    <div class="image-wrapper">
+                        <img
+                            src="images/amendoimJapones2.png"
+                            alt="Amendoim Japonês"
+                        />
+                    </div>
+
                     <div class="product-card product2">
                         <h3>Paçoca</h3>
                         <p>
@@ -56,7 +71,10 @@
                             selecionado.
                         </p>
                     </div>
-                    <img src="pacoca.png" alt="Paçoca" />
+                    <div class="image-wrapper">
+                        <img src="images/pacoca.png" alt="Paçoca" />
+                    </div>
+
                     <div class="product-card product3">
                         <h3>Pasta de Amendoim</h3>
                         <p>
@@ -64,21 +82,232 @@
                             dia.
                         </p>
                     </div>
-                    <img src="pasta-amendoim.png" alt="Pasta de Amendoim" />
+                    <div class="image-wrapper">
+                        <img
+                            src="images/pastaAmendoim.png"
+                            alt="Pasta de Amendoim"
+                        />
+                    </div>
                 </div>
             </section>
 
-            <section class="features"></section>
+            <section class="features" id="features">
+                <h2 class="accent-text">Nossos Diferenciais</h2>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined">eco</span>
+                        <h3>100% Orgânico</h3>
+                        <p>
+                            Produzido sem agrotóxicos ou aditivos artificiais.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined">spa</span>
+                        <h3>Sem Conservantes</h3>
+                        <p>
+                            Ingredientes naturais, direto da fazenda para você.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined"
+                            >fitness_center</span
+                        >
+                        <h3>Fonte de Energia</h3>
+                        <p>
+                            Rico em proteínas e gorduras saudáveis para o seu
+                            dia.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined"
+                            >emoji_nature</span
+                        >
+                        <h3>Produção Sustentável</h3>
+                        <p>
+                            Compromisso com o meio ambiente e com os pequenos
+                            produtores.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <section class="reviews"></section>
+            <section class="reviews" id="reviews">
+                <h2 class="accent-text">O que nossos clientes dizem</h2>
+                <div class="reviews-list">
+                    <article class="review-card">
+                        <p class="review-text">
+                            "Os amendoins japoneses são simplesmente incríveis!
+                            Crocância e sabor na medida certa."
+                        </p>
+                        <div class="review-author">
+                            <strong>Mariana S.</strong>
+                            <div
+                                class="review-rating"
+                                aria-label="Avaliação 5 de 5 estrelas"
+                            >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                            </div>
+                        </div>
+                    </article>
 
-            <section class="contact"></section>
+                    <article class="review-card">
+                        <p class="review-text">
+                            "A paçoca é muito saborosa e feita com muito
+                            carinho. Recomendo para toda família."
+                        </p>
+                        <div class="review-author">
+                            <strong>Carlos M.</strong>
+                            <div
+                                class="review-rating"
+                                aria-label="Avaliação 4 de 5 estrelas"
+                            >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="color: gray"
+                                    >star</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <p class="review-text">
+                            "A pasta de amendoim é saudável e dá aquela energia
+                            para o dia todo. Excelente produto!"
+                        </p>
+                        <div class="review-author">
+                            <strong>Ana P.</strong>
+                            <div
+                                class="review-rating"
+                                aria-label="Avaliação 5 de 5 estrelas"
+                            >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                                <span class="material-symbols-rounded"
+                                    >star</span
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2 class="accent-text">Seja um Revendedor</h2>
+                <p>
+                    Você tem um mercado, loja ou distribuidora? Preencha os
+                    dados abaixo e nossa equipe entrará em contato com você!
+                </p>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="empresa">Nome da empresa *</label>
+                        <input
+                            type="text"
+                            id="empresa"
+                            name="empresa"
+                            required
+                            placeholder="Nome da sua empresa"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="responsavel">Nome do responsável *</label>
+                        <input
+                            type="text"
+                            id="responsavel"
+                            name="responsavel"
+                            required
+                            placeholder="Nome completo"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail comercial *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="email@empresa.com"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            required
+                            placeholder="(99) 99999-9999"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="4"
+                            placeholder="Conte um pouco sobre sua empresa, localização e interesse"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Solicitar contato
+                    </button>
+                </form>
+
+                <div class="form-success-message" style="display: none">
+                    <p>
+                        Obrigado pelo interesse! Nossa equipe comercial
+                        retornará em breve.
+                    </p>
+                </div>
+            </section>
         </main>
 
         <footer class="container">
             <p>&copy; 2025 Amendoim Brasil. Todos os direitos reservados.</p>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
