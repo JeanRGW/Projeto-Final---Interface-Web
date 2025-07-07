@@ -74,6 +74,10 @@ h2 {
     font-weight: 1000;
 }
 
+.contact h2 {
+    font-size: 2.8rem;
+}
+
 h3 {
     font-size: 2.4rem;
 }
@@ -452,6 +456,10 @@ footer {
         font-size: 6rem;
     }
 
+    .contact h2 {
+        font-size: 4rem;
+    }
+
     .features h2 {
         margin-bottom: 10rem;
     }
@@ -503,6 +511,10 @@ footer {
 
     h2 {
         font-size: 8rem;
+    }
+
+    .contact h2 {
+        font-size: 6rem;
     }
 
     h3 {
